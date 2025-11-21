@@ -1,0 +1,83 @@
+/* Contenedor centrado */
+.container-centrado {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 10px; /* más compacto */
+}
+
+/* Tarjeta del formulario */
+.card-form {
+  width: 430px; /* REDUCIDO (antes 550px) */
+  background: white;
+  padding: 14px; /* más compacto */
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+}
+
+/* Títulos */
+h2 {
+  font-size: 20px; /* más pequeño */
+  margin-bottom: 8px;
+}
+
+h4 {
+  font-size: 14px;
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+
+/* Grid dos columnas */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; /* más compacto */
+}
+
+/* Inputs */
+label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+input, select {
+  width: 100%;
+  padding: 6px; /* más pequeño */
+  font-size: 13px; /* más pequeño */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Checkbox */
+.check {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+/* Botones */
+.botones {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+button {
+  padding: 6px 14px; /* más pequeño */
+  font-size: 13px; /* más pequeño */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="button"] {
+  background: #ccc;
+}
+
+button[type="submit"] {
+  background: #007bff;
+  color: white;
+}

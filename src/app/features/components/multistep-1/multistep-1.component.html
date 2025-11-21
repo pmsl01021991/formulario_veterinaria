@@ -1,0 +1,16 @@
+    <h2>Paso 1</h2>
+    <form [formGroup]="formStep1">
+      <label>
+        Nombre:
+        <input type="text" formControlName="nombre">
+      </label>
+      <br>
+
+      <label>
+        Apellido:
+        <input type="text" formControlName="apellido">
+      </label>
+      <br>
+
+      <button (click)="continuar()">Continuar</button>
+    </form>

@@ -1,0 +1,83 @@
+<div class="container-centrado">
+  <div class="card-form">
+    
+    <h2>REGÍSTRATE</h2>
+
+    <h4>Datos del Cliente:</h4>
+
+    <form [formGroup]="formRegistro" (ngSubmit)="enviar()">
+
+      <div class="grid-2">
+        <div>
+          <label>Nombres</label>
+          <input type="text" formControlName="nombres">
+        </div>
+
+        <div>
+          <label>Apellidos</label>
+          <input type="text" formControlName="apellidos">
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <label>DNI</label>
+          <input type="text" formControlName="dni">
+        </div>
+
+        <div>
+          <label>Celular</label>
+          <input type="text" formControlName="celular">
+        </div>
+      </div>
+
+      <div>
+        <label>Correo Electrónico</label>
+        <input type="email" formControlName="correo">
+      </div>
+
+      <h4>Datos de la Mascota:</h4>
+
+      <div>
+        <label>Nombre de la Mascota</label>
+        <input type="text" formControlName="nombreMascota">
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <label>Edad</label>
+          <input type="number" formControlName="edad">
+        </div>
+
+        <div>
+          <label>Sexo</label>
+          <select formControlName="sexo">
+            <option value="macho">Macho</option>
+            <option value="hembra">Hembra</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label>Servicio</label>
+        <select formControlName="servicio">
+          <option value="generales">Generales</option>
+          <option value="baño">Baño</option>
+          <option value="consulta">Consulta</option>
+        </select>
+      </div>
+
+      <label class="check">
+        <input type="checkbox" formControlName="aceptar">
+        He leído y acepto las condiciones de uso
+      </label>
+
+      <div class="botones">
+        <button type="button">Cerrar</button>
+        <button type="submit">Enviar</button>
+
+      </div>
+
+    </form>
+  </div>
+</div>

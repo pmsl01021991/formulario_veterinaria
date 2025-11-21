@@ -1,0 +1,70 @@
+<h2>Formulario de Registro</h2>
+
+    <form [formGroup]="form" (ngSubmit)="submit()">
+
+      <!-- Nombre -->
+      <label>
+        Nombre:
+        <input type="text" formControlName="nombre" />
+      </label>
+      <br />
+
+      <!-- Email -->
+      <label>
+        Email:
+        <input type="email" formControlName="email" />
+      </label>
+      <br />
+
+      <!-- Edad -->
+      <label>
+        Edad:
+        <input type="number" formControlName="edad" />
+      </label>
+      <br />
+
+      <!-- Contraseña -->
+      <label>
+        Contraseña:
+        <input type="password" formControlName="password" />
+      </label>
+      <br />
+
+      <!-- Género (Radio buttons) -->
+      <label>Género:</label><br/>
+      <label><input type="radio" formControlName="genero" value="masculino" /> Masculino</label>
+      <label><input type="radio" formControlName="genero" value="femenino" /> Femenino</label>
+      <label><input type="radio" formControlName="genero" value="otro" /> Otro</label>
+      <br /><br />
+
+      <!-- País (Select) -->
+      <label>
+        País:
+        <select formControlName="pais">
+          <option value="">Seleccione...</option>
+          <option value="peru">Perú</option>
+          <option value="mexico">México</option>
+          <option value="argentina">Argentina</option>
+          <option value="espana">España</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <!-- Aceptar términos -->
+      <label>
+        <input type="checkbox" formControlName="terminos" />
+        Acepto los términos y condiciones
+      </label>
+      <br /><br />
+
+      <!-- Notificaciones (Switch simple con checkbox) -->
+      <label class="switch">
+        Notificaciones activadas:
+        <input type="checkbox" formControlName="notificaciones" />
+      </label>
+      <br /><br />
+
+      <button type="submit" [disabled]="form.invalid">Registrarse</button>
+    </form>
+
+    

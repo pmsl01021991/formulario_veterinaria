@@ -1,0 +1,21 @@
+    <h2>Paso 2</h2>
+
+    <form [formGroup]="formStep2">
+      <div formArrayName="emails">
+
+        <div *ngFor="let emailCtrl of emails.controls; let i = index">
+          <label>
+            Email {{ i + 1 }}:
+            <input type="email" [formControlName]="i">
+          </label>
+          <br>
+        </div>
+
+      </div>
+
+      <button type="button" (click)="agregarEmail()">Agregar otro email</button>
+      <br><br>
+
+      <button (click)="finalizar()">Finalizar</button>
+
+    </form>

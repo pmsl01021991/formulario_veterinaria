@@ -1,0 +1,6 @@
+    /* Ejemplo de switch básico */
+    .switch input[type="checkbox"] {
+      width: 40px;
+      height: 20px;
+      accent-color: #4caf50;
+    }
